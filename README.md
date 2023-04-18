@@ -4,6 +4,7 @@ in order to run the program on your pc:
   1. download the .py files and 
   2. install the following libraries on your environment:
     * ! pip install tensorflow
+    
     * ! pip install transformers
     
   3. download the models of machine learning and deep learning and put them on the folder of the project 
