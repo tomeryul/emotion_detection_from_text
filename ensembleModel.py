@@ -60,12 +60,8 @@ class TE_Model:
                                              1 / self.learned_dataSet_size, 1 / self.learned_dataSet_size,
                                              1 / self.learned_dataSet_size, 1 / self.learned_dataSet_size])]
 
-        help_arr = [self.emotionDict[0] / self.learned_dataSet_size, self.emotionDict[1] / self.learned_dataSet_size,
-                    self.emotionDict[2] / self.learned_dataSet_size, self.emotionDict[3] / self.learned_dataSet_size,
-                    self.emotionDict[4] / self.learned_dataSet_size, self.emotionDict[5] / self.learned_dataSet_size]
-        the_prediction = [(x * y) for x, y in zip(help_arr, start_arr)]
 
-        the_prediction = self.normalize_the_prediction(the_prediction)
+        the_prediction = self.normalize_the_prediction(start_arr)
 
         return the_prediction
 
